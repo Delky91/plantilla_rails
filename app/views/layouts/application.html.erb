@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Plantilla</title>
+    <title>AppVisualArt</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag 'main', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= javascript_include_tag 'https://kit.fontawesome.com/8acaebb394.js', crossorigin: "anonymous" %>
+    
+    <link rel="stylesheet" href="assets/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://kit.fontawesome.com/8acaebb394.js" crossorigin="anonymous"></script>
   </head>
+    <div id="main">
+      <%= render 'shared/header' %>      
+      <%= yield %>
+      <%= render 'shared/footer'%>
+  </div>
 
-  <body class="is-preload-0 is-preload-1 is-preload-2">
+<!-- Se agregan los Scripts de JS-->
 
-		<!-- Main -->
-			<div id="main">
-        
-				<%= render 'shared/header' %>
+<%= javascript_include_tag 'jquery.min' %>
+<%= javascript_include_tag 'breakpoints.min' %>
+<%= javascript_include_tag 'browser.min' %>
+<%= javascript_include_tag 'main' %>
 
-				<%= yield %>
+</body>
 
-				<%= render 'shared/footer' %>
-
-			</div>
-
-		<!-- Scripts -->
-			<%= javascript_include_tag 'jquery.min.js' %>
-      <%= javascript_include_tag 'browser.min.js' %>
-      <%= javascript_include_tag 'breakpoints.min.js' %>
-      <%= javascript_include_tag 'main.js' %>
-
-	</body>
 </html>

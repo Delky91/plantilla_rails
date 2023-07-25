@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapisUP.com/css?family=Roboto:400,700");
 
 /*
 	Lens by HTML5 UP
@@ -7,7 +7,87 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-* {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -883,7 +963,7 @@ ul.icons li .icon:before {
 	top: 0;
 	width: 4em;
 	height: 4em;
-	background-image: url("images/close-small-alt.svg");
+	background-image: url("close-small-alt.svg");
 	background-repeat: no-repeat;
 	background-size: 32px 32px;
 	cursor: pointer;
@@ -1194,7 +1274,7 @@ body.is-preload-1 #main {
 	top: 0;
 	width: 4em;
 	height: 4em;
-	background-image: url("images/close.svg");
+	background-image: url("close.svg");
 	background-repeat: no-repeat;
 	background-size: 64px 64px;
 	cursor: pointer;
@@ -1211,7 +1291,7 @@ body.is-preload-1 #main {
 	width: 6em;
 	height: 6em;
 	margin-top: -3em;
-	background-image: url("images/arrow.svg");
+	background-image: url("arrow.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1317,7 +1397,7 @@ body.is-preload-1 #main {
 	left: 50%;
 	width: 3em;
 	height: 3em;
-	background-image: url("images/spinner.svg");
+	background-image: url("spinner.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1338,7 +1418,7 @@ body.fullscreen #viewer {
 }
 
 body.fullscreen #viewer .inner .toggle {
-	background-image: url("images/open.svg");
+	background-image: url("open.svg");
 }
 
 body.is-preload-1 #viewer {
@@ -1365,7 +1445,7 @@ body.is-preload-2 #viewer .slide {
 		-webkit-transition: opacity 0.75s ease;
 		-ms-transition: opacity 0.75s ease;
 		transition: opacity 0.75s ease;
-		background-image: url("images/open.svg");
+		background-image: url("open.svg");
 		opacity: 0;
 		right: 0;
 	}
@@ -1382,12 +1462,12 @@ body.is-preload-2 #viewer .slide {
 
 	#viewer .inner .nav-next,
 	#viewer .inner .nav-previous {
-		background-image: url("images/arrow-small.svg");
+		background-image: url("arrow-small.svg");
 		background-size: 32px 32px;
 	}
 
 	body.fullscreen #viewer .inner .toggle {
-		background-image: url("images/open-small.svg");
+		background-image: url("open-small.svg");
 	}
 }
 
@@ -1405,7 +1485,7 @@ body.is-preload-2 #viewer .slide {
 	}
 
 	#viewer .inner .toggle {
-		background-image: url("images/close-small.svg") !important;
+		background-image: url("close-small.svg") !important;
 		background-size: 32px 32px;
 	}
 
@@ -1416,4 +1496,8 @@ body.is-preload-2 #viewer .slide {
 		transition-delay: 0.5s;
 		opacity: 1;
 	}
+}
+/* Se crea clase para ajustar tamaño de iconos de RRSS */
+img.smallimg {
+	height: 50px;
 }
