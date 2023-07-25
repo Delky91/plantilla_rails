@@ -373,7 +373,7 @@ var main = (function ($) {
 
 				// Create elements.
 				s.$slide = $(
-					'<div class="slide"><div class="caption"></div><div class="image"></div></div>'
+					'<div class="slide"><div class="caption"><h2>Diam tempus accusan</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div><div class="image"></div></div>'
 				);
 
 				// Image.
